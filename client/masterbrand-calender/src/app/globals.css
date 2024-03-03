@@ -1,0 +1,18 @@
+:root {
+  --max-width: 1100px;
+  --light-blue: #5684AE;
+  --dark-blue: #0F4C81;
+  --light-orange: #FFE4C8;
+  --dark-orange: #F9BE81;
+  --calender-tile-color: #E4F6ED;
+}
+
+body {
+  color: #000;
+  background: #fff;
+}
+
+[data-theme='dark'] body {
+  color: #fff;
+  background: #000;
+}
