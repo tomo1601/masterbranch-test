@@ -1,5 +1,6 @@
 "use client";
 import { ThemeProvider } from "next-themes";
+import {useState, useEffect} from 'react'
 
 const Providers = ({ children }) => {
   const [mounted, setMounted] = useState(false);
@@ -12,7 +13,7 @@ const Providers = ({ children }) => {
     return <>{children}</>;
   }
 
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
 };
 
 export default Providers;
